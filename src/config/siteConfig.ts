@@ -117,7 +117,7 @@ export const siteConfig: SiteConfig = {
 			type: "image",
 			value: "assets/images/logo/firefly-light.png",
 			valueDark: "assets/images/logo/firefly-dark.png",
-			alt: "🍀",
+			alt: "⭐",
 		},
 		// 导航栏标题
 		title: "重闻博客",

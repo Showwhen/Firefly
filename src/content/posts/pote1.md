@@ -10,11 +10,10 @@ image: "./images/pote1.avif"
 draft: false
 ---
 
-## 打油诗集：第一篇
+<span style="font-size:1rem">
+&emsp;&emsp;十一月十四日，临寝，诗兴大发，人不明吾名之雅趣。故作此篇，以释号。十五日夙书。</span>
 
-&emsp;&emsp;十一月十四日，临寝，诗兴大发，人不明吾名之雅趣。故作此篇，以释号。十五日夙书。
-
-<div align="center"style="font-size:1.3rem;">
+<div align="center"style="font-size:1.5rem;">
 
 秋&emsp;雨&emsp;夜&emsp;袭&emsp;洛&emsp;长&emsp;安<br>
 

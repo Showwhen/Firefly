@@ -90,7 +90,7 @@ export const live2dWidgetConfig: Live2DWidgetConfig = {
 	model: [
 		{
 			// 外部直连模型
-			path: "public/pio/models/live2d/kp31/model.json",
+			path: "/pio/models/live2d/kp31/model.json",
 			volume: 1,
 			scale: 1,
 			x: 0.5,

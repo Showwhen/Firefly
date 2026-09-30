@@ -10,7 +10,7 @@ image: "./images/pote2.avif"
 draft: false
 ---
 
-<span style="font-size:1.5em">
+<div class="poem poem-desktop" style="font-size:1.5em">
 
 打球<br>
 
@@ -30,7 +30,29 @@ draft: false
 
 今日终。<br>
 
-</span>
+</div>
+
+<div class="poem poem-mobile" style="font-size:1.5em">
+
+打球<br>
+
+外面下着雨，<br>
+
+我在室内打球。<br>
+
+雨冲刷着屋顶，<br>
+
+我顶着垚君投篮。<br>
+
+我不知外面的雨是大是小，<br>
+
+只知篮球卡在框上。<br>
+
+灯闭，雨渐小。<br>
+
+今日终。<br>
+
+</div>
 
 <p style="text-align:right"><span style="font-size:1.2em">
 二〇二四年<br>

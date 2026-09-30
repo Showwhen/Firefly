@@ -1,0 +1,20 @@
+---
+title: 五环合颂怀古
+published: 2026-09-29
+description: 又一次参加了五环的合唱比赛，主题是“庆祝长征胜利90周年”，由此想到了过去的历史，感叹历史兴衰。
+category: 诗歌
+tags: [诗歌,历史]
+series: 打油诗集
+order: 6
+image: "./images/pote6.avif"
+draft: false
+---
+**背景**<br>&emsp;&emsp;又一次参加了五环的合唱比赛，主题是“庆祝长征胜利90周年”，由此想到了过去的历史，感叹历史兴衰。<br>
+<div class="poem poem-desktop" style="text-align:center;font-size:1.5rem;">
+
+周&ensp;室&ensp;有&ensp;颂&ensp;风&ensp;亦&ensp;采，&ensp;鼠&ensp;辫&ensp;仍&ensp;颂&ensp;风&ensp;不&ensp;在。<br>
+封&ensp;剥&ensp;奴&ensp;刮&ensp;毁&ensp;自&ensp;逞？&ensp;奴&ensp;主&ensp;犹&ensp;存&ensp;民&ensp;怨&ensp;声。<br>
+民&ensp;国&ensp;自&ensp;矜&ensp;民&ensp;主&ensp;纯，&ensp;自&ensp;颂&ensp;北&ensp;伐&ensp;战&ensp;果&ensp;沉。<br>
+民&ensp;主&ensp;民&ensp;悦&ensp;无&ensp;民&ensp;怨？&ensp;民&ensp;苦&ensp;民&ensp;难&ensp;无&ensp;名&ensp;卷。<br>
+民&ensp;族&ensp;民&ensp;权&ensp;本&ensp;民&ensp;生，&ensp;民&ensp;信&ensp;民&ensp;行&ensp;却&ensp;民&ensp;死。<br>
+北&ensp;势&ensp;关&ensp;破&ensp;苍&ensp;天&ensp;泣，&ensp;玉&ensp;玺&ensp;龙&ensp;袍&ensp;后&ensp;人&ensp;继。

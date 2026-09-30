@@ -10,7 +10,7 @@ image: "./images/pote3.avif"
 draft: false
 ---
 
-<div align="center"style="font-size:1.5rem;">
+<div class="poem poem-desktop" style="text-align:center;font-size:1.5rem;">
 
 励  耘  育  人  又  一  周，    应  休  却  仍  上  磨  中。<br>
 
@@ -23,6 +23,21 @@ draft: false
 与  君  掷  珠  争  好  胜，    场  下  素  日  又  互  助。<br>
 
 此  生  幸  遭  闯  一  世，    夜  寐  夙  起  再  重  来。<br>
+</div>
+
+<div class="poem poem-mobile" style="text-align:center;font-size:1.4rem;">
+
+励耘育人又一周，应休却仍上磨中。<br>
+
+归舍卸甲释重负，脚踏芒鞋易便服。<br>
+
+手把魔方转飞快，电脑建模打印待。<br>
+
+凭空造物甚神奇，研究原理细分析。<br>
+
+与君掷珠争好胜，场下素日又互助。<br>
+
+此生幸遭闯一世，夜寐夙起再重来。<br>
 </div>
 
 >【注释】<br>①**卸甲**：脱校服<br>②**释重负**：一是指卸下书包，二是指卸下初三备考紧绷的压力<br>③**掷珠**：投掷珍珠，珍珠代指篮球，意为投球（篮球动作），这里指打球。

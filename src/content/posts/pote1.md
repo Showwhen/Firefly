@@ -3,7 +3,7 @@ title: 释号
 published: 2024-10-15
 description: 十一月十四日，临寝，诗兴大发，人不明吾名之雅趣。故作此篇，以释号。十五日夙书。
 category: 诗歌
-tags: [诗歌]
+tags: [诗歌,重闻]
 series: 打油诗集
 order: 1
 image: "./images/pote1.avif"
@@ -13,7 +13,7 @@ draft: false
 <span style="font-size:1rem">
 &emsp;&emsp;十一月十四日，临寝，诗兴大发，人不明吾名之雅趣。故作此篇，以释号。十五日夙书。</span>
 
-<div align="center"style="font-size:1.5rem;">
+<div style="text-align:center;font-size:1.5rem;">
 
 秋&emsp;雨&emsp;夜&emsp;袭&emsp;洛&emsp;长&emsp;安<br>
 

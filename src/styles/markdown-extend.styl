@@ -655,3 +655,19 @@ a.card-wiki-link
       min-width: 0
       aspect-ratio: 2 / 1
       align-self: stretch
+
+// ── 诗歌双版本排版 ─────────────────────────
+// 默认（移动端）：只显示 .poem-mobile
+// 桌面端（≥769px）：只显示 .poem-desktop
+.poem-desktop
+  display: none
+
+.poem-mobile
+  display: block
+
+@media (min-width: 769px)
+  .poem-desktop
+    display: block
+
+  .poem-mobile
+    display: none

@@ -2,10 +2,10 @@ import type { AnnouncementConfig } from "../types/announcementConfig";
 
 export const announcementConfig: AnnouncementConfig = {
 	// 公告标题，留空则走i18n默认标题
-	title: "中秋节快乐哦！！！",
+	title: "欢度国庆！！！",
 
 	// 公告内容
-	content: "但愿人长久，千里共婵娟",
+	content: "七天假期记得美美耍起哦",
 
 	// 是否允许用户关闭公告
 	closable: false,

@@ -21,9 +21,12 @@ const config = {
   <script type="module" is:inline define:vars={{ config }}>
     import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
     const requestedPath = new URLSearchParams(window.location.search).get("path");
-    const effectiveConfig = requestedPath
-      ? { ...config, path: requestedPath }
-      : config;
+    // 统一路径格式：去掉末尾斜杠，确保与数据库中存储的路径一致
+    const normalizedPath = window.location.pathname.replace(/\/$/, '');
+    const effectiveConfig = {
+      ...config,
+      path: requestedPath || normalizedPath
+    };
     try {
       init(effectiveConfig);
     } catch (error) {

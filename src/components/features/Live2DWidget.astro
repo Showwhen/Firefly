@@ -27,7 +27,6 @@ interface Props {
 			  }[];
 		position?: "bottom-left" | "bottom-right";
 		size?: number | { width: number; height: number };
-		mobileSize?: number | { width: number; height: number };
 		primaryColor?: string;
 		transitionDuration?: number;
 		transitionType?: "slide" | "fade";
@@ -98,7 +97,6 @@ function serializeMenus(menus: Props["config"]["menus"]) {
 	data-models={JSON.stringify(modelConfigs)}
 	data-position={config.position || "bottom-left"}
 	data-size={JSON.stringify(config.size || 300)}
-	data-mobile-size={JSON.stringify(config.mobileSize || null)}
 	data-primary-color={config.primaryColor || ""}
 	data-transition-duration={config.transitionDuration?.toString() || ""}
 	data-transition-type={config.transitionType || ""}
@@ -154,13 +152,7 @@ function serializeMenus(menus: Props["config"]["menus"]) {
 		try {
 			const models = JSON.parse(container.dataset.models || "[]");
 			const position = container.dataset.position || "bottom-left";
-			const desktopSize = JSON.parse(container.dataset.size || "300");
-			const mobileSize = JSON.parse(container.dataset.mobileSize || "null");
-			// 移动端断点以下且配置了 mobileSize 时用小尺寸，否则用桌面尺寸
-			const size =
-				mobileSize !== null && window.innerWidth <= 768
-					? mobileSize
-					: desktopSize;
+			const size = JSON.parse(container.dataset.size || "300");
 			const primaryColor = container.dataset.primaryColor || undefined;
 			const transitionDuration = container.dataset.transitionDuration
 				? parseInt(container.dataset.transitionDuration)

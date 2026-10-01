@@ -33,6 +33,7 @@ const projectMeta = projects.map((p) => ({
 	published: p.data.published,
 	link: p.data.link,
 	status: p.data.status,
+	postSlug: p.data.postSlug,
 }));
 
 // 筛选：显示全部已知状态（带图标）
@@ -109,6 +110,7 @@ const statusFilters = PROJECT_STATUS_KEYS.map((key) => {
 						published={p.published}
 						link={p.link}
 						status={p.status}
+						postSlug={p.postSlug}
 					/>
 				))}
 			</div>

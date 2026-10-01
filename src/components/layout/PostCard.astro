@@ -470,4 +470,36 @@ const minutes = remarkPluginFrontmatter.minutes;
   :global(.grid-mode) .post-card-enter-btn {
     display: flex !important;
   }
+
+  /* 置顶文章角标 - 圆形图钉 */
+  :global(.post-card-wrapper.pinned) {
+    position: relative;
+  }
+  :global(.post-card-wrapper.pinned)::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 100;
+    width: 32px;
+    height: 32px;
+    background: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  }
+  :global(.post-card-wrapper.pinned)::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 101;
+    width: 32px;
+    height: 32px;
+    background: white;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M16 12V4h1V2H7v2h1v8l-2 2v2h5.2v6h1.6v-6H18v-2l-2-2z'/%3E%3C/svg%3E") center/60% no-repeat;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M16 12V4h1V2H7v2h1v8l-2 2v2h5.2v6h1.6v-6H18v-2l-2-2z'/%3E%3C/svg%3E") center/60% no-repeat;
+  }
 </style>

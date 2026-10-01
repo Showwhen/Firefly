@@ -18,6 +18,7 @@ interface Props {
 	published?: Date;
 	status?: string;
 	link?: { label: string; icon: string; value: string }[];
+	postSlug?: string; // 直接跳转到文章页，如 "modeclock"
 }
 
 const {
@@ -30,9 +31,11 @@ const {
 	published,
 	status,
 	link = [],
+	postSlug,
 } = Astro.props;
 
-const detailUrl = url(`/projects/${id}/`);
+// 有 postSlug 时跳转文章，否则跳转项目详情
+const detailUrl = postSlug ? url(`/posts/${postSlug}/`) : url(`/projects/${id}/`);
 
 // 状态元数据（标准 key → 本地化 + 配色）
 const statusMeta = status ? getProjectStatusMeta(status) : null;

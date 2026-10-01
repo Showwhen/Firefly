@@ -52,6 +52,7 @@ type ProjectData = {
 	link: ProjectLink[];
 	status: string;
 	lang: string;
+	postSlug?: string; // 直接跳转到文章页
 };
 
 type ContentCollection<T> = CollectionConfig<
@@ -127,6 +128,7 @@ const projectsCollection: ContentCollection<ProjectData> = defineCollection({
 			.default([]),
 		status: z.string().optional().default(""),
 		lang: z.string().optional().default(""),
+		postSlug: z.string().optional(),
 	}),
 });
 

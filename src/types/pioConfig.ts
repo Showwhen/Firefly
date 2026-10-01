@@ -53,6 +53,7 @@ export type Live2DWidgetConfig = {
 		items?: { icon?: string; label: string; action: string }[]; // 完全替换默认菜单项
 		extraItems?: { icon?: string; label: string; action: string }[]; // 追加到默认菜单末尾
 		align?: "left" | "right"; // 菜单对齐方式，默认 "right"
+		style?: Record<string, string>; // 菜单容器自定义样式（覆盖默认隐藏样式）
 	};
 	tips?: {
 		enable?: boolean; // 气泡开关，默认 true

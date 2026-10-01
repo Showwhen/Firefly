@@ -1,25 +1,11 @@
 # 关于我 / About Me
 
-你好！我是 **重闻** ，一个希望在日常生活里被你反复听闻人。
+&emsp;&emsp;你好！我是 **重闻** ，一个希望在日常生活里被你反复听闻人。说起“重闻”两字，人们往往首先想到的是“满座重闻皆掩泣”。而这是高中学的，但是这个笔名是我初中想了半个月硬想出来的。我当时想出他的第一念头就是，我要让今天所有听闻我的人，以后定会再次听闻我的名字。而他们再次听到这个名字的时候就会发现，这个名字早就预言了一切——重闻“重闻”
 
-## 🛠️ 关于本站
-
-这个网站使用 **Astro** 框架构建，采用了 [Firefly](https://github.com/CuteLeaf/Firefly) 模板，Firefly 是基于 [Fuwari](https://github.com/saicaca/fuwari) 的二次开发。
-
-**Firefly** 是一款基于 Astro 框架和 Fuwari 模板开发的清新美观且现代化个人博客主题模板，专为技术爱好者和内容创作者设计。该主题融合了现代 Web 技术栈，提供了丰富的功能模块和高度可定制的界面，让您能够轻松打造出专业且美观的个人博客网站。
-
-
-**🖥️在线预览： [Firefly - Demo site](https://firefly.cuteleaf.cn/)**
-
-**📝Firefly使用文档： [https://docs-firefly.cuteleaf.cn](https://docs-firefly.cuteleaf.cn/)**
-
-**⭐Firefly开源地址：[https://github.com/CuteLeaf/Firefly](https://github.com/CuteLeaf/Firefly)** 
-
-**⭐Fuwari开源地址：[https://github.com/saicaca/fuwari](https://github.com/saicaca/fuwari)**
-
-
+## 关于本站
+&emsp;&emsp;这是我搭建的第一个博客，也是我搭建的第一个网站。在社交媒体被高度集中化的今天，拥有一个属于自己的博客让人感到自由，而有你的访问也让这一切显得弥足珍贵。这就像在信息高度发达的今天，我愿落笔写下一封纸质信，你愿驻足耐心等候。
 
 ---
 
-*感谢你的来访！希望在这里能找到对你有用的内容！*
+*感谢你的访问，希望你能找到喜欢的内容，期待你的再次听闻。*
 

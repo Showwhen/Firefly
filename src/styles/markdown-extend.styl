@@ -1,5 +1,14 @@
 .custom-md
 
+  // 仅出现在目录、不在正文显示的隐藏标题（配合 <h2 class="toc-only" id="...">）
+  .toc-only
+    margin: 0 !important
+    height: 0
+    overflow: hidden
+    font-size: 0
+    line-height: 0
+    border: none
+
   blockquote.admonition
     .bdm-title
       display: flex

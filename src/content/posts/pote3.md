@@ -9,6 +9,12 @@ order: 3
 image: "./images/pote3.avif"
 draft: false
 ---
+<details>
+<summary><strong>背景</strong></summary>
+&emsp;&emsp;初三单休再加课外补习班真给人上魔了，有一次博凡（补课机构）没上课，直接爽玩，写下此诗。
+</details>
+
+***
 
 <div class="poem poem-desktop" style="text-align:center;font-size:1.5rem;">
 

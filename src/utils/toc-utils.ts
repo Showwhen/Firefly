@@ -56,7 +56,9 @@ export class TOCManager {
 		}
 		return Array.from(
 			contentContainer.querySelectorAll("h1, h2, h3, h4, h5, h6"),
-		);
+			// 过滤掉位于 display:none 容器内的标题（如手机/电脑双版本排版中隐藏的一侧），
+			// 避免同一标题被目录重复收录，且隐藏标题无法作为跳转目标
+		).filter((h) => h.getClientRects().length > 0);
 	}
 
 	/**

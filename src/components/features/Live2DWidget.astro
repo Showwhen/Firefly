@@ -34,6 +34,7 @@ interface Props {
 			items?: MenuItem[];
 			extraItems?: MenuItem[];
 			align?: "left" | "right";
+			style?: Record<string, string>;
 		};
 		tips?: {
 			enable?: boolean;
@@ -80,10 +81,12 @@ function serializeMenus(menus: Props["config"]["menus"]) {
 		items?: ReturnType<typeof serialize>;
 		extraItems?: ReturnType<typeof serialize>;
 		align?: string;
+		style?: Record<string, string>;
 	} = {};
 	if (menus.items) result.items = serialize(menus.items);
 	if (menus.extraItems) result.extraItems = serialize(menus.extraItems);
 	if (menus.align) result.align = menus.align;
+	if (menus.style) result.style = menus.style;
 	return result;
 }
 ---
@@ -203,6 +206,9 @@ function serializeMenus(menus: Props["config"]["menus"]) {
 				if (menus.align) {
 					options.menus.align = menus.align;
 				}
+				if (menus.style) {
+					options.menus.style = menus.style;
+				}
 			}
 
 			// 提示配置
@@ -226,9 +232,63 @@ function serializeMenus(menus: Props["config"]["menus"]) {
 			}
 
 			createWidget(options);
+			enforceMobileMenuVisible();
 		} catch (e) {
 			console.error("Failed to initialize Live2D widget:", e);
 		}
+	}
+
+	// 修复移动端休眠唤醒后控制按钮消失：
+	// l2d-widget 的菜单只在 mouseenter 时 show，sleep() 会把菜单 opacity 置 0，
+	// 而唤醒后不会重新 show。触摸设备没有 hover，按钮就永久消失。
+	// 窄屏（<=768px）下持续强制菜单可见；回到桌面宽度则交还库的 hover 逻辑。
+	function enforceMobileMenuVisible() {
+		const tracked = new WeakSet<HTMLElement>();
+
+		const forceVisible = (menu: HTMLElement) => {
+			if (window.innerWidth > 768) return;
+			if (menu.style.opacity !== "1") menu.style.opacity = "1";
+			if (menu.style.pointerEvents !== "auto")
+				menu.style.pointerEvents = "auto";
+		};
+
+		const trackMenu = (menu: HTMLElement) => {
+			if (tracked.has(menu)) return;
+			tracked.add(menu);
+			forceVisible(menu);
+			new MutationObserver(() => forceVisible(menu)).observe(menu, {
+				attributes: true,
+				attributeFilter: ["style"],
+			});
+		};
+
+		const findAndTrack = () => {
+			// 菜单容器特征：body 直接子 fixed 宿主内、与 canvas 同级的 div，
+			// 内联样式为 absolute + flex 纵向排列（tips 气泡是 absolute 但非 flex，
+			// 且 transform 为 translateX(-50%)，可借此区分；不依赖异步加载的图标 title）
+			document
+				.querySelectorAll<HTMLCanvasElement>("body > div > canvas")
+				.forEach((canvas) => {
+					const host = canvas.parentElement;
+					if (!host) return;
+					host.querySelectorAll<HTMLElement>(":scope > div").forEach((div) => {
+						const s = div.style;
+						if (
+							s.position === "absolute" &&
+							s.display === "flex" &&
+							s.flexDirection === "column"
+						) {
+							trackMenu(div);
+						}
+					});
+				});
+		};
+
+		findAndTrack();
+		new MutationObserver(findAndTrack).observe(document.body, {
+			childList: true,
+			subtree: true,
+		});
 	}
 
 	// 确保只初始化一次

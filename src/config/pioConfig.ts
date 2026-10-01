@@ -139,6 +139,11 @@ export const live2dWidgetConfig: Live2DWidgetConfig = {
 		],
 		// 菜单对齐方式
 		align: "right" as const,
+		// 常驻显示菜单：库默认仅鼠标悬停时显示，移动端触摸无法触发悬停，导致按钮永远不可见
+		style: {
+			opacity: "1",
+			pointerEvents: "auto",
+		},
 	},
 	// 提示气泡配置
 	tips: {
@@ -166,8 +171,8 @@ export const live2dWidgetConfig: Live2DWidgetConfig = {
 	// 响应式配置
 	responsive: {
 		// 在移动端隐藏
-		hideOnMobile: true,
+		hideOnMobile: false,
 		// 移动端断点
-		mobileBreakpoint: 768,
+		mobileBreakpoint: 9999,
 	},
 };

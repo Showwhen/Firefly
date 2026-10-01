@@ -9,6 +9,12 @@ order: 2
 image: "./images/pote2.avif"
 draft: false
 ---
+<details>
+<summary><strong>背景</strong></summary>
+&emsp;&emsp;正打球时有感而发，这样惬意美好的时光，有还有多久呢？
+</details>
+
+***
 
 <div class="poem poem-desktop" style="font-size:1.5em">
 

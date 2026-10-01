@@ -9,8 +9,10 @@ order: 5
 image: "./images/pote5.avif"
 draft: false
 ---
-**背景**<br>
+<details>
+<summary><strong>背景</strong></summary>
 &emsp;&emsp;随着高中篇章的开启，在不熟的班级里，首次举行了运动会这种团体活动。初中故人各奔东西，高中新侪四面八方。由于我高中还在本校，所以看着课本中的物是人非悄然照进现实，再加上秋风的萧瑟。悲，悲！！
+</details>
 <div style="text-align:center;font-size:1.5rem;">
 
 ***

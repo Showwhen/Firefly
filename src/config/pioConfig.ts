@@ -101,6 +101,8 @@ export const live2dWidgetConfig: Live2DWidgetConfig = {
 	position: "bottom-right" as const,
 	// 画布尺寸（px）
 	size: { width: 400, height: 400 },
+	// 移动端画布尺寸（≤768px 时生效，不设置则与 size 相同）
+	mobileSize: { width: 200, height: 200 },
 	// 主题色，用于菜单、状态条等 UI 元素的背景色，默认 'rgba(96,165,250,0.9)'
 	primaryColor: "var(--l2d-msg-bg)",
 	// 入场/退场动画时长（ms）

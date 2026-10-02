@@ -16,12 +16,13 @@ export const galleryConfig: GalleryConfig = {
 		// passwordHint: 密码提示，设置后在输入密码错误时显示（可选，需配合password使用）
 		// 每添加一个数组项就相当于添加了一个相册，记得在 public/gallery/ 目录下创建对应的子目录并放入图片
 		{
-			id: "firefly-2026",
-			name: "可爱流萤",
-			description: "飞萤之火自无梦的长夜亮起，绽放在终竟的明天。",
-			location: "崩坏：星穹铁道",
-			date: "2026-01-01",
-			tags: ["崩坏星穹铁道", "流萤"],
+			id: "JiaWuTai-2026",
+			name: "登顶嘉午台",
+			description: "遇事不决嘉午台，暑假登顶嘉午台。",
+			location: "西安市·嘉午台",
+			cover: "https://s41.ax1x.com/2026/10/02/pnJuTEt.jpg",
+			date: "2026-07-29",
+			tags: ["嘉午台", "徒步"],
 		},
 		{
 			id: "encrypted-test",
